@@ -15,4 +15,8 @@
     <Content Remove="App.razor" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Blazor.FMEA.App\Blazor.FMEA.App.csproj" />
+  </ItemGroup>
+
 </Project>

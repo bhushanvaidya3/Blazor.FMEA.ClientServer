@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Blazor.FMEA.App.Services.Forms;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace Blazor.FMEA.Server
 {
@@ -29,10 +25,10 @@ namespace Blazor.FMEA.Server
             services.AddServerSideBlazor();
 
             //services.AddScoped<IEmployeeDataService, MockEmployeeDataService>();
-            //services.AddHttpClient<IEmployeeDataService, EmployeeDataService>(client =>
-            //{
-            //    client.BaseAddress = new Uri("https://localhost:44340/");
-            //});
+            services.AddHttpClient<IDetectionMethodDataService, DetectionMethodDataService>(client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:44374/");
+            });
             //services.AddHttpClient<ICountryDataService, CountryDataService>(client =>
             //{
             //    client.BaseAddress = new Uri("https://localhost:44340/");

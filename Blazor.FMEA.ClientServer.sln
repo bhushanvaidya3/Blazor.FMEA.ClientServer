@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.FMEA.Server", "Blazor.FMEA.Server\Blazor.FMEA.Server.csproj", "{4BA06322-275D-49FF-84C4-06A59198F872}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.FMEA.Server", "Blazor.FMEA.Server\Blazor.FMEA.Server.csproj", "{4BA06322-275D-49FF-84C4-06A59198F872}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.FMEA.Client", "Blazor.FMEA.Client\Blazor.FMEA.Client.csproj", "{1010D897-4A22-4C25-AD20-06C6C40B1A85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.FMEA.App", "Blazor.FMEA.App\Blazor.FMEA.App.csproj", "{89843B34-19E5-46DF-9638-9998701A1A91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.FMEA.App", "Blazor.FMEA.App\Blazor.FMEA.App.csproj", "{89843B34-19E5-46DF-9638-9998701A1A91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.FMEA.Api", "Blazor.FMEA.Api\Blazor.FMEA.Api.csproj", "{C408C8B3-9630-4B75-8239-94AEBF932CD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.FMEA.Shared", "Blazor.FMEA.Shared\Blazor.FMEA.Shared.csproj", "{BCBBD0BF-7E4D-47EC-B737-4FE2CEEC543B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +21,18 @@ Global
 		{4BA06322-275D-49FF-84C4-06A59198F872}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BA06322-275D-49FF-84C4-06A59198F872}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BA06322-275D-49FF-84C4-06A59198F872}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1010D897-4A22-4C25-AD20-06C6C40B1A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1010D897-4A22-4C25-AD20-06C6C40B1A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1010D897-4A22-4C25-AD20-06C6C40B1A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1010D897-4A22-4C25-AD20-06C6C40B1A85}.Release|Any CPU.Build.0 = Release|Any CPU
 		{89843B34-19E5-46DF-9638-9998701A1A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89843B34-19E5-46DF-9638-9998701A1A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89843B34-19E5-46DF-9638-9998701A1A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89843B34-19E5-46DF-9638-9998701A1A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C408C8B3-9630-4B75-8239-94AEBF932CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C408C8B3-9630-4B75-8239-94AEBF932CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C408C8B3-9630-4B75-8239-94AEBF932CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C408C8B3-9630-4B75-8239-94AEBF932CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBBD0BF-7E4D-47EC-B737-4FE2CEEC543B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBBD0BF-7E4D-47EC-B737-4FE2CEEC543B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBBD0BF-7E4D-47EC-B737-4FE2CEEC543B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBBD0BF-7E4D-47EC-B737-4FE2CEEC543B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

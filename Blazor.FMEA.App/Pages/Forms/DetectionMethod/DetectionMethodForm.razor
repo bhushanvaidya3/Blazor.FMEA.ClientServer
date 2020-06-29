@@ -1,0 +1,37 @@
+﻿@page "/detectionMethodForm";
+@inherits DetectionMethodFormBase
+
+<h1>DetectionMethodForm</h1>
+
+@if (detectionMethodFormDOs == null)
+{
+    <em>Loading...</em>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>Detection ID</th>
+            <th>Product Class</th>
+            <th>Site</th>
+            <th>Char Description</th>
+            <th>Escape Description</th>
+            <th>Edit</th>
+        </tr>
+        @foreach (var rec in detectionMethodFormDOs)
+        {
+            <tr>
+                <td>@rec.Detection_ID</td>
+                <td>@rec.Product_Class</td>
+                <td>@rec.Site</td>
+                <td>@rec.PD_Characteristics_Desc</td>
+                <td>@rec.Escape_Description</td>
+                <td>
+                    <a href="@($"detectionMethodFormDetail/{rec.Detection_ID}")" class="btn btn-primary">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </table>
+}
