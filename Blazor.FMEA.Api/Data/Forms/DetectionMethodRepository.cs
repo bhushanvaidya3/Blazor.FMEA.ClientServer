@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Blazor.FMEA.Api.Models.Forms
+namespace Blazor.FMEA.Api.Data.Forms
 {
     public class DetectionMethodRepository : IDetectionMethodRepository
     {

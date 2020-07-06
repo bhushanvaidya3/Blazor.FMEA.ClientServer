@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.FMEA.Server", "Blazo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.FMEA.App", "Blazor.FMEA.App\Blazor.FMEA.App.csproj", "{89843B34-19E5-46DF-9638-9998701A1A91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.FMEA.Api", "Blazor.FMEA.Api\Blazor.FMEA.Api.csproj", "{C408C8B3-9630-4B75-8239-94AEBF932CD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.FMEA.Api", "Blazor.FMEA.Api\Blazor.FMEA.Api.csproj", "{C408C8B3-9630-4B75-8239-94AEBF932CD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.FMEA.Shared", "Blazor.FMEA.Shared\Blazor.FMEA.Shared.csproj", "{BCBBD0BF-7E4D-47EC-B737-4FE2CEEC543B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.FMEA.Shared", "Blazor.FMEA.Shared\Blazor.FMEA.Shared.csproj", "{BCBBD0BF-7E4D-47EC-B737-4FE2CEEC543B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

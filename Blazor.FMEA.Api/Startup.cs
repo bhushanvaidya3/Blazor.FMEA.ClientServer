@@ -1,4 +1,4 @@
-using Blazor.FMEA.Api.Models;
+using Blazor.FMEA.Api.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -6,7 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
-using Blazor.FMEA.Api.Models.Forms;
+using Blazor.FMEA.Api.Data.Forms;
+using Blazor.FMEA.Api.Data.Master;
 
 namespace Blazor.FMEA.Api
 {
@@ -25,7 +26,8 @@ namespace Blazor.FMEA.Api
             services.AddControllers();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IDetectionMethodRepository, DetectionMethodRepository>();
+            services.AddTransient<IDetectionMethodRepository, DetectionMethodRepository>();
+            services.AddTransient<ISiteMasterRepository, SiteMasterRepository>();
 
         }
 

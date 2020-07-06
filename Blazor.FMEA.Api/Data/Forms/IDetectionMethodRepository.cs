@@ -1,7 +1,7 @@
 ﻿using Blazor.FMEA.Shared.Models.Forms;
 using System.Collections.Generic;
 
-namespace Blazor.FMEA.Api.Models.Forms
+namespace Blazor.FMEA.Api.Data.Forms
 {
     public interface IDetectionMethodRepository
     {

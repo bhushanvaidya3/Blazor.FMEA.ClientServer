@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Blazor.FMEA.Api.Models
+namespace Blazor.FMEA.Api.Data
 {
     public class AppDbContext: DbContext
     {

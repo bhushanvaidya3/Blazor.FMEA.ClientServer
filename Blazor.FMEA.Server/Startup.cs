@@ -1,4 +1,5 @@
 using Blazor.FMEA.App.Services.Forms;
+using Blazor.FMEA.App.Services.Master;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,11 @@ namespace Blazor.FMEA.Server
 
             //services.AddScoped<IEmployeeDataService, MockEmployeeDataService>();
             services.AddHttpClient<IDetectionMethodDataService, DetectionMethodDataService>(client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:44374/");
+            });
+
+            services.AddHttpClient<ISiteMasterDataService, SiteMasterDataService>(client =>
             {
                 client.BaseAddress = new Uri("https://localhost:44374/");
             });

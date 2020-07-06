@@ -1,4 +1,4 @@
-﻿using Blazor.FMEA.Api.Models.Forms;
+﻿using Blazor.FMEA.Api.Data.Forms;
 using Blazor.FMEA.Shared.Models.Forms;
 using Microsoft.AspNetCore.Mvc;
 using System;

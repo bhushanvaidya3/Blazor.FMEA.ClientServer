@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace Blazor.FMEA.Client.Pages.Forms.DetectionMethod
 {
-    public class DetectionMethodFormDetailBase: ComponentBase
+    public class DetectionMethodFormDetailBase : ComponentBase
     {
+        [Inject]
+        private NavigationManager navigationManager { get; set; }
+
         [Inject]
         public IDetectionMethodDataService DetectionMethodDataService { get; set; }
 
@@ -24,12 +27,19 @@ namespace Blazor.FMEA.Client.Pages.Forms.DetectionMethod
 
         protected void HandleValidSubmit()
         {
+            try
+            {
 
+            }
+            catch (System.Exception e)
+            {
+                throw e;
+            }
         }
 
         protected void HandleNavigateToListPage()
         {
-            //NavigationManager.NavigateTo("/employeeoverview");
+            navigationManager.NavigateTo("/detectionmethodform");
         }
     }
 }
